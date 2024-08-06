@@ -1,0 +1,160 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.introduction {
+    padding: 2rem;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.greenhouse-effect {
+    position: relative;
+    padding: 2rem;
+    background-color: white;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hover-text {
+    color: #2196F3;
+    cursor: pointer;
+    position: relative;
+}
+
+#popup-image-container {
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+
+#popup-image {
+    width: 300px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    height: 4rem;
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    line-height: 4rem;
+    position: relative;
+    clear: both;
+}
+
+.detailed-info {
+    padding: 2rem;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.detailed-info h2 {
+    margin-top: 0;
+}
+
+.detailed-info article {
+    margin-bottom: 2rem;
+}
+
+.detailed-info ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    
+}
+
+header, main, footer {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+main{
+    height: 100%;
+    overflow: hidden;
+    background: url('images/Ocean-Heat-Wave-Climate-Change.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+nav ul li a {
+    color: white;
+}
+
+.introduction, .greenhouse-effect, .detailed-info {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+#background-video{
+    margin: 0px;
+    padding: 0px;
+    width: 0;
+    height: 0;
+}
