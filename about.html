@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="branding">
-            <img src="logo.png" alt="Climate Action Logo" class="logo">
+            <img src="images/finalproject copy.png" alt="Climate Action Logo" class="logo">
             <h1>Climate Action</h1>
         </div>
         <nav>
@@ -21,6 +21,10 @@
         </nav>
     </header>
     <main>
+            <video autoplay muted loop id="background-video">
+                <source src="images/Ocean-Heat-Wave-Climate-Change.gif" type="video/gif">
+                Your browser does not support the video tag.
+            </video>
         <section class="detailed-info">
             <h2>About Climate Change</h2>
             <article>
@@ -30,10 +34,15 @@
                 </p>
             </article>
             <article>
-                <h3>Causes of Climate Change</h3>
-                <p>
-                    The main cause of climate change is the greenhouse effect. Certain gases in the Earth's atmosphere, such as carbon dioxide (CO<sub>2</sub>) and methane (CH<sub>4</sub>), trap heat from the sun, preventing it from escaping back into space. This leads to a warming of the planet. Human activities such as burning fossil fuels, deforestation, and industrial processes increase the concentration of these greenhouse gases.
-                </p>
+                <section class="greenhouse-effect">
+                    <h2>The Greenhouse Effect</h2>
+                    <p>
+                        The main cause of climate change is the <span class="hover-text" data-img="images/Greenhouse-gases.png">greenhouse effect</span>. 
+                        Certain gases in the Earth's atmosphere, such as carbon dioxide (CO2) and methane (CH4), trap heat from the sun, preventing it 
+                        from escaping back into space. This leads to a warming of the planet. Human activities such as burning fossil fuels, 
+                        deforestation, and industrial processes increase the concentration of these greenhouse gases.
+                    </p>
+                </section>
             </article>
             <article>
                 <h3>Effects of Climate Change</h3>
@@ -66,6 +75,9 @@
     <footer>
         <p>Contact us: info@climateaction.org | Follow us on social media</p>
     </footer>
+    <div id="popup-image-container">
+        <img id="popup-image" src="" alt="Popup Image">
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>
