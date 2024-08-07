@@ -20,15 +20,15 @@ header{
     display: flex;
     justify-content: flex-start;
 }
-.Lego{
-    pointer-events: none;
-    margin-right: 120px;
+.Logo{
+    margin-right: 100px;
     border-radius: 30px; 
+    left: 1000px;
 }
 
 .navi a{
     padding: 8px 26px;
-    margin: 20px 70px;
+    margin: 20px 50px;
     font-weight: 600;
     color: #d5f51f;
     display: inline-block;
@@ -36,13 +36,14 @@ header{
     text-decoration: none;
 
 }
+
 .navi a.current,
 .navi a:hover{
     background: #000;
     color: rgb(11, 230, 11);
 }
+
 .sticky {
-    position: fixed;
     top: 5%;
     width: 100%;
 }
@@ -60,6 +61,7 @@ header{
     pointer-events: none;
     z-index: -1;
 }
+
 iframe {
     position: relative;
     top: 50%;
@@ -69,28 +71,26 @@ iframe {
     transform: translate(-50%, -50%);
 }
 
-
-
-
 .title {
     justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: transparent;
     position: relative;
     
 }
+
 h1 {
     font-size: 60px;
     text-align: center;
     padding-bottom: 300px;
     padding-top: 300px;
 }
+
 h1::before{
     content: "Climate Action";
     position: absolute;
     width: 0%;
-    height:100%;
-    color: rgb(11, 230, 11);
+    height:100px;
+    color: rgb(84, 159, 245);
     transition: 1.5s ease-in-out;
     overflow: hidden;
     -webkit-text-stroke: 2.5px;
@@ -98,22 +98,23 @@ h1::before{
     text-align: left;
 
 }
+
 h1:hover::before{
-    width: 100%;
+    width: 415px;
     filter: drop-shadow(0 0 50px darkgreen);
 }
 
 .content {
     position: relative;
     z-index: 1;
-    color: rgb(84, 159, 245);
+    color: rgb(255, 255, 255);
     padding: 2rem;
-    background: rgba(0,0,0,0.5);
     padding: 10px;
     margin: 1rem;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
+
 .content h2{
     margin-top: 0;
 }
@@ -122,6 +123,7 @@ h1:hover::before{
     margin-bottom: 5rem;
     color: #ddd;
 }
+
 .content p{
     font-family:cursive;
     font-size: 20px;
@@ -145,4 +147,5 @@ h1:hover::before{
     align-items: center;
     gap: 1rem;
     padding: 20px;
+    width: 51.98;
 }

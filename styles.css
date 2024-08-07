@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     
@@ -107,7 +110,7 @@ header, main, footer {
 main{
     height: 100%;
     overflow: hidden;
-    background: url('images/Ocean-Heat-Wave-Climate-Change.gif') no-repeat center center fixed;
+    background: url('images/aboutPage/Ocean.gif') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -116,7 +119,7 @@ nav ul li a {
 }
 
 .greenhouse-effect, .detailed-info {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.5);
     color: black;
 }
 
