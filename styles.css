@@ -40,32 +40,6 @@ nav ul li a {
     font-weight: bold;
 }
 
-.hero {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.hero-image {
-    width: 100%;
-    height: auto;
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.introduction {
-    padding: 2rem;
-    background-color: white;
-    margin: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 .greenhouse-effect {
     position: relative;
     padding: 2rem;
@@ -124,12 +98,6 @@ footer {
     margin-left: 2rem;
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    
-}
-
 header, main, footer {
     position: relative;
     z-index: 1;
@@ -147,7 +115,7 @@ nav ul li a {
     color: white;
 }
 
-.introduction, .greenhouse-effect, .detailed-info {
+.greenhouse-effect, .detailed-info {
     background: rgba(255, 255, 255, 0.8);
     color: black;
 }
