@@ -1,20 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1rem;
+    z-index: 100;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    background-color: transparent; 
 }
 
 .branding {
@@ -38,7 +34,6 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -46,7 +41,6 @@ nav ul li a {
 .greenhouse-effect {
     position: relative;
     padding: 2rem;
-    background-color: white;
     margin: 1rem 0;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -104,18 +98,13 @@ footer {
 header, main, footer {
     position: relative;
     z-index: 1;
-    color: white;
 }
 
-main{
-    height: 100%;
+main {
+    height: max-content;
     overflow: hidden;
     background: url('images/aboutPage/Ocean.gif') no-repeat center center fixed;
     background-size: cover;
-}
-
-nav ul li a {
-    color: white;
 }
 
 .greenhouse-effect, .detailed-info {
@@ -123,9 +112,9 @@ nav ul li a {
     color: black;
 }
 
-#background-video{
-    margin: 0px;
-    padding: 0px;
+#background-video {
+    margin: 0;
+    padding: 0;
     width: 0;
     height: 0;
 }
