@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Climate Action Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-section">
+        <img src="../images/image copy.png" alt="Mountain logo" class="logo">
+        <a href="#take-action" class="action-link">Take Action</a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#take-action">Take Action</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="take-action">
+            <h2>Take Action</h2>
+             <form id="pledge-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="action">I pledge to:</label>
+                <textarea id="action" name="action" required></textarea>
+
+                
+                <button type="submit">Submit Pledge</button>
+            </form>
+            <div id="thank-you-message" style="display: none;">
+                <h3>Thank you for your pledge!</h3>
+               
+                <p>Your pledge:</p>
+                <p id="user-pledge"></p>
+            </div>
+
+            <h3>Donate or Volunteer</h3>
+            <ul id="organizations">
+            </ul>
+
+            <h3>Upcoming Events</h3>
+            <ul id="events">
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at <a href="mailto:info@climateaction.com">info@climateaction.com</a></p>
+        <p>Follow us on social media</p>
+        <ul>
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

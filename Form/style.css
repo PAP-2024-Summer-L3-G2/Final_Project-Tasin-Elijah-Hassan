@@ -1,0 +1,135 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('../images/Mount2.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(76, 175, 80, 0.8);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    height: 40px;
+    margin-right: 20px;
+}
+
+header .action-link {
+    color: white;
+    text-decoration: none;
+    font-size: 24px; /* Increased font size */
+    font-weight: bold; /* Made the text bold */
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Main section styles */
+main {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    
+     cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Lists in the Take Action section */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(76, 175, 80, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
