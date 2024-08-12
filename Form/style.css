@@ -17,43 +17,38 @@ body {
 
 /* Header styles */
 header {
-    background-color: rgba(76, 175, 80, 0.8);
-    color: white;
-    padding: 10px 20px;
-    display: flex;
+    width: 100%;
+    padding: 29px 100px;
     align-items: center;
-}
-
-header .logo {
-    height: 40px;
-    margin-right: 20px;
-}
-
-header .action-link {
-    color: white;
-    text-decoration: none;
-    font-size: 24px; /* Increased font size */
-    font-weight: bold; /* Made the text bold */
-    margin-right: auto;
-    margin-left: 20px;
-}
-
-nav ul {
-    list-style: none;
+    z-index: 100;
+    position: relative;
     display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+    justify-content: flex-start;
 }
 
-nav ul li {
-    margin-right: 20px;
+.Logo {
+    margin-right: 100px;
+    border-radius: 30px;
 }
 
-nav a {
-    color: white;
+.navi a {
+    padding: 8px 26px;
+    margin: 20px 50px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    border-radius: 30px;
     text-decoration: none;
-    font-size: 18px;
+    background: rgba(0, 0, 0, .25);
+}
+
+.navi a.current{
+    background: rgba(0, 0, 0, .75);
+}
+
+.navi a:hover {
+    background: rgba(0, 0, 0, .5);
+    color: rgb(11, 230, 11);
 }
 
 /* Main section styles */
