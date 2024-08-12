@@ -141,8 +141,6 @@ header, main, footer {
 main {
     height: max-content;
     overflow: hidden;
-    /* background: url('images/aboutPage/Ocean.gif') no-repeat center center fixed;
-    background-size: cover; */
 }
 
 .greenhouse-effect, .detailed-info {
