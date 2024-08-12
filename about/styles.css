@@ -16,15 +16,6 @@ header {
     justify-content: flex-start;
 }
 
-/* header {
-    z-index: 100;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent; 
-} */
-
 .branding {
     display: flex;
     align-items: center;
