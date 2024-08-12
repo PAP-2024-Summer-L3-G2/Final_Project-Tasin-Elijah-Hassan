@@ -2,23 +2,61 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+    background: url('images/aboutPage/Ocean.gif') no-repeat center center fixed;
+    background-size: cover;
 }
 
 header {
+    width: 100%;
+    padding: 29px 100px;
+    align-items: center;
+    z-index: 100;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* header {
     z-index: 100;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent; 
-}
+} */
 
 .branding {
     display: flex;
     align-items: center;
 }
 
-.logo {
+.Logo {
+    margin-right: 100px;
+    border-radius: 30px;
+}
+
+.navi a {
+    padding: 8px 26px;
+    margin: 20px 50px;
+    font-weight: 600;
+    color: #d5f51f;
+    display: inline-block;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.navi a.current,
+.navi a:hover {
+    background: #000;
+    color: rgb(11, 230, 11);
+}
+
+.sticky {
+    top: 5%;
+    width: 100%;
+}
+
+/* .logo {
     width: 50px;
     margin-right: 1rem;
 }
@@ -36,7 +74,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     font-weight: bold;
-}
+} */
 
 .greenhouse-effect {
     position: relative;
@@ -103,8 +141,8 @@ header, main, footer {
 main {
     height: max-content;
     overflow: hidden;
-    background: url('images/aboutPage/Ocean.gif') no-repeat center center fixed;
-    background-size: cover;
+    /* background: url('images/aboutPage/Ocean.gif') no-repeat center center fixed;
+    background-size: cover; */
 }
 
 .greenhouse-effect, .detailed-info {
