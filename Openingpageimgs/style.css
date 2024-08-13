@@ -46,14 +46,9 @@ header {
     color: rgb(11, 230, 11);
 }
 
-.sticky {
-    top: 5%;
-    width: 100%;
-}
-
 .dropdown {
     float: right;
-    overflow: hidden;
+    position: relative;
 }
 .dropdown .dropbtn {
     padding: 8px 26px;
@@ -62,23 +57,24 @@ header {
     color: rgb(255, 255, 255);
     display: inline-block;
     border-radius: 30px;
-    text-decoration: none;
-    outline: none;
     background: rgba(0, 0, 0, .25);
+
 
 }
 .dropdown-content {
     display: none;
-    min-width: 120px;
+    min-width: 100px;
     z-index: 1;
-    
+    top: 80%;
+    right: 8%;
+    position: absolute;
 }
-  
+
 .dropdown-content a {
     padding: 8px 15px;
     margin: 10px 30px;
     color: rgb(255, 255, 255);
-    display: inline-block;
+    display: block;
     border-radius: 30px;
     background: rgba(0, 0, 0, .25);
     transition: 1.2 ease-in-out;
@@ -93,8 +89,7 @@ header {
 .dropdown:hover .dropdown-content {
     border-radius: 30px;
     background-color: clear;
-    display: inline-table;
-    opacity: 100%;
+    display: block;
 }
 
 
