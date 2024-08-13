@@ -1,19 +1,19 @@
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-    padding: 0;
+    padding-top: 20px;
     background: url('../images/aboutPage/Ocean.gif') no-repeat center center fixed;
     background-size: cover;
 }
 
 header {
     width: 100%;
-    padding: 29px 100px;
     align-items: center;
     z-index: 100;
     position: relative;
     display: flex;
     justify-content: flex-start;
+    padding-top: 30px;
 }
 
 .branding {
@@ -24,6 +24,7 @@ header {
 .Logo {
     margin-right: 100px;
     border-radius: 30px;
+    margin-left: 100px;
 }
 
 .navi a {
@@ -78,18 +79,34 @@ header {
 }
 
 footer {
-    height: 4rem;
-    background-color: #539f5d;
+    background-color: rgba(76, 175, 80, 0.8);
     color: white;
     text-align: center;
-    font-style: oblique;
-    line-height: 4rem;
-    padding: 1rem 20px;
-    font-weight: 500;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0;
 }
 
 .detailed-info {
