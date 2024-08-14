@@ -199,10 +199,12 @@ main {
 
 a:link { 
     text-decoration: none; 
+    color: black;
   } 
-  
+
 a:visited { 
     text-decoration: none; 
+    color: rgb(85, 193, 141);
   } 
 
 a:hover { 
