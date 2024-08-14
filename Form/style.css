@@ -46,14 +46,63 @@ header {
     background: rgba(0, 0, 0, .75);
 }
 
-.navi a:hover {
+.navi a:hover, .dropdown:hover .dropbtn {
     background: rgba(0, 0, 0, .5);
     color: rgb(11, 230, 11);
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+}
+
+.dropdown .dropbtn {
+    padding: 8px 26px;
+    margin: 20px 50px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, .25);
+    font-size: 16px;
+    border-style: none;
+}
+
+.dropdown-content {
+    display: none;
+    min-width: 100px;
+    z-index: 1;
+    top: 80%;
+    right: 8%;
+    position: absolute;
+    font-size: 14px;
+}
+
+.dropdown-content a {
+    padding: 8px 12px;
+    margin: 10px 30px;
+    color: rgb(255, 255, 255);
+    display: block;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, .25);
+    transition: 1.2 ease-in-out;
+}
+
+.dropdown-content a:hover {
+    background: rgba(0, 0, 0, .75);
+    transition: 1.8s;
+}
+
+.dropdown:hover .dropdown-content {
+    border-radius: 30px;
+    background-color: clear;
+    display: block;
 }
 
 /* Main section styles */
 main {
     padding: 20px;
+    margin-top: 8px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
