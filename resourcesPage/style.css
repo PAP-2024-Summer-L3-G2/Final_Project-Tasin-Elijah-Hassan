@@ -125,7 +125,7 @@ h1 {
 }
 
 h1::before{
-    content: "Resources -->";
+    content: "Resources 👇";
     position: absolute;
     width: 0%;
     height: 100px;
