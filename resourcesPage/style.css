@@ -1,34 +1,35 @@
-/* Reset default margin and padding */
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
 
-/* Body styles */
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-image: url('../images/Mount2.png');
-    background-size: cover;
-    background-position: center;
+    background: #ddd;
+    min-height: 120vh;
     padding-top: 20px;
-    color: #333;
 }
 
-/* Header styles */
 header {
     width: 100%;
-    padding: 29px 100px;
     align-items: center;
     z-index: 100;
     position: relative;
     display: flex;
     justify-content: flex-start;
+    padding-top: 30px;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
 }
 
 .Logo {
     margin-right: 100px;
     border-radius: 30px;
+    margin-left: 100px;
 }
 
 .navi a {
@@ -99,59 +100,76 @@ header {
     display: block;
 }
 
-/* Main section styles */
-main {
-    padding: 20px;
-    margin-top: 8px;
-    background: rgba(255, 255, 255, 0.8);
+#video-background {
+    position: fixed;
+    top: -10%;
+    left: -20%;
+    width: 140vw;
+    height: 120vh;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.title {
+    justify-content: center;
+    color: transparent;
+    position: relative;
+}
+
+h1 {
+    text-align: left;
+    padding-bottom: 40px;
+    padding-top: 0px;
+    padding-left: 45px;
+    font-size: 45px;
+}
+
+h1::before{
+    content: "Resources 👇";
+    position: absolute;
+    width: 0%;
+    height: 100px;
+    color: rgb(14, 225, 113);
+    transition: 3s ease-in-out;
+    overflow: hidden;
+    -webkit-text-stroke: 2.5px;
+    text-wrap: nowrap;
+    text-align: left;
+}
+
+h1:hover::before{
+    width: 450px;
+    filter: drop-shadow(0 0 50px darkgreen);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+    padding: 50px;
+    margin: 1rem;
+    margin-left: 45px;
+    margin-right: 45px;
+    border-radius: 8px;
+}
+
+.content article {
+    margin-bottom: 5rem;
+    color: #DCF1E6;
+}
+
+.content p {
+    font-size: 20px;
+    padding: 2rem;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: rgba(0, 0, 0, 0.35);
+    margin: 1rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-
-form label {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 15px;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    
-     cursor: pointer;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-/* Lists in the Take Action section */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-/* Footer styles */
 footer {
     background-color: rgba(76, 175, 80, 0.8);
     color: white;
@@ -168,6 +186,10 @@ footer ul {
     margin: 0;
 }
 
+p {
+    margin: 0;
+}
+
 footer ul li {
     margin: 0 10px;
 }
@@ -176,4 +198,21 @@ footer a {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    margin: 0;
+}
+
+a:link { 
+  text-decoration: none; 
+  color: white;
+} 
+a:visited { 
+  text-decoration: none; 
+  color: white;
+} 
+a:hover { 
+  text-decoration: none; 
+  color: rgb(84, 159, 245);
+} 
+a:active { 
+  text-decoration: none; 
 }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resources</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="sticky">
+        <div class="logo"><img class="Logo" src="../images/projectLogo.png" alt=""></div>
+        <nav class="navi">
+            <a href="../index.html">Home</a>
+            <a href="../about/about.html">About</a>
+            <div class="dropdown">
+                <button class="dropbtn">Take Action</button>
+                <div class="dropdown-content">
+                  <a href="../Form/form.html">Take Action Now!</a>
+                  <a href="../resourcesPage/resources.html" class="current">Resources</a>
+                </div>
+              </div>
+        </nav>
+    </header>
+        <main>
+            <section class="content">
+                <div class="Title">
+                    <h1>Resources</h1>
+                </div>
+                <article>
+                    <p>
+                    <b>Events: <br><br> Tree Planting Event - August 15, 2024 <br> Beach Cleanup - September 5, 2024 <br> Climate Change Rally - October 10, 2024 <br> 21 Acres Center for Local Food and Sustainable Living - Friday, August 16 · 2-3pm PDT <br> Seattle Go! Green Conference - 2025 <br>
+                    <br><br><br>
+                    Job/Internships: <br><br>
+                    <a href="https://thesca.org/">SCA:</a> The SCA provides an array of environmental programs designed for a range of ages and a variety of conservation needs. While they also have alot of paid interships for high school and college students throughout the nation.
+                    <br><br> <a href="https://cig.uw.edu/2023/03/uw-undergrads-join-our-team-with-a-paid-internship/">UW Undergrad Internship:</a> The Climate Impacts Group is seeking an intern to support several interrelated projects as part of the Northwest Climate Resilience Collaborative. The intern will join EarthLab’s Summer Internship Program, a robust, cohort-based internship program for UW undergraduate students. Interns will recieve a stripend at the end of the summer internship. <br><br>
+                    <a href="https://www.seattle.gov/environment/climate-change/climate-justice/green-new-deal/climate-workforce">City of Seattle Green Jobs:</a> The City of Seattle is investing $2.24 million to recruit, train, and place workers from economically distressed communities into competitive, well-paying construction and clean energy jobs. They expected to hire even more people in future. <br><br>
+                    <br>
+                    <b>Volunteering/Community Work:</b> <br><br> Food Banks: There are alot of food banks that support community members by providing them good organic nutrients while keeping the food waste Low. Look thr your nearest food bank and contact them if they got any volunteering positions open. <a href="https://www.seattlefoodcommittee.org/find-a-food-bank/">Click Here</a> <br><br>
+                    <a href="https://www.groundswellnw.org/">groundswell NW: </a> Groundswell NW has been instrumental in the creation of over 30 parks and natural areas. In order to have a cleaner parks and streets for community members to strive and engage with nature.
+                    <br><br><br>
+                    There are so many other organizations that worked very hard to in order to project our like and the environment we live in. And 350 SEATTLE is one of them that
+                    works toward climate justice by organizing people to make deep systems change: resisting fossil fuels; building momentum for healthy alternatives; and fostering resilient, just, and welcoming communities.
+                    <a href="https://350seattle.org/">Learn more about it!</a> <br><br>
+                    </b>
+                    </p>
+                </article>
+            </section>
+        </main>
+        <footer>
+        <section>
+            <div id="video-background"></div>
+            <script>
+                //Start and end time in seconds
+                let start = 20;
+                let end = 90;
+                let tag = document.createElement('script');
+                tag.src = "https://www.youtube.com/iframe_api";
+                let firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                let player;//Stores iframe here
+                //Creates the iframe
+                function onYouTubeIframeAPIReady() {
+                    player = new YT.Player('video-background', {
+                    videoId: 'RzVvThhjAKw?si=FV7QQgV_EjPlq-vA',
+                    width: "100%",
+                    height: "100%",
+                    playerVars: {
+                        'playsinline': 1,
+                        'mute': 1,
+                        'start': start,
+                        'iv_load_policy': 3,
+                        'showinfo': 0,
+                        'cc_load_policy': 0,
+                        'disablekb': 1,
+                    },
+                    events: {
+                        'onReady': onPlayerReady,
+                    }
+                    });
+                }
+                // The API will call this function when the video player is ready.
+                function onPlayerReady(event) {
+                    event.target.playVideo();
+                    setInterval(restartVideo, (end-start) * 1000);
+                }
+                //Makes the video jump back to the start time
+                function restartVideo(){
+                    player.seekTo(start);
+                    event.target.unMute();
+                }
+            </script>
+        <p>Contact us at <a href="mailto:info@climateaction.com">info@climateaction.com</a></p>
+        <p>Follow us on social media</p>
+        <ul>
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+            </section>
+        </footer>
+</body>
+</html>

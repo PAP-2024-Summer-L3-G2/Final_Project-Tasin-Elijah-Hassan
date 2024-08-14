@@ -57,6 +57,7 @@ header {
     float: right;
     position: relative;
 }
+
 .dropdown .dropbtn {
     padding: 8px 26px;
     margin: 20px 50px;
@@ -65,9 +66,10 @@ header {
     display: inline-block;
     border-radius: 30px;
     background: rgba(0, 0, 0, .25);
-
-
+    font-size: 16px;
+    border-style: none;
 }
+
 .dropdown-content {
     display: none;
     min-width: 100px;
@@ -75,10 +77,11 @@ header {
     top: 80%;
     right: 8%;
     position: absolute;
+    font-size: 14px;
 }
 
 .dropdown-content a {
-    padding: 8px 15px;
+    padding: 8px 12px;
     margin: 10px 30px;
     color: rgb(255, 255, 255);
     display: block;
@@ -87,12 +90,11 @@ header {
     transition: 1.2 ease-in-out;
 }
 
-
 .dropdown-content a:hover {
     background: rgba(0, 0, 0, .75);
     transition: 1.8s;
 }
-  
+
 .dropdown:hover .dropdown-content {
     border-radius: 30px;
     background-color: clear;
@@ -101,7 +103,7 @@ header {
     
 #video-background {
     position: fixed;
-    top: 0;
+    top: -10%;
     left: -20%;
     width: 140vw;
     height: 120vh;
@@ -119,8 +121,8 @@ header {
 h1 {
     font-size: 60px;
     text-align: center;
-    padding-bottom: 300px;
-    padding-top: 300px;
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 h1::before{
@@ -202,3 +204,18 @@ footer a {
     margin: 0;
 }
 
+a:link { 
+    text-decoration: none; 
+    color: white;
+  } 
+  a:visited { 
+    text-decoration: none; 
+    color: white;
+  } 
+  a:hover { 
+    text-decoration: none; 
+    color: rgb(84, 159, 245);
+  } 
+  a:active { 
+    text-decoration: none; 
+  }
