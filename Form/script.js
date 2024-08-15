@@ -13,7 +13,7 @@ document.getElementById('pledge-form').addEventListener('submit', function(event
 
 const organizations = [
     { name: 'Climate Action Fund', url: 'https://www.climateaction.org' },
-    { name: 'Earth Protectors', url: 'https://www.earthprotectors.org' },
+    { name: 'Earth Justice', url: 'https://earthjustice.org/about' },
     { name: 'Greenpeace', url: 'https://www.greenpeace.org' }
 ];
 
